@@ -126,8 +126,8 @@ type SqlExecutor interface {
 // Compile-time check that DbMap and Transaction implement the SqlExecutor
 // interface.
 var (
-        _ SqlExecutor = &DbMap{}
-        _ SqlExecutor = &Transaction{}
+	_ SqlExecutor = &DbMap{}
+	_ SqlExecutor = &Transaction{}
 )
 
 ///////////////
